@@ -1,5 +1,54 @@
-body {
-  width: 100%;
-  height: 100%;
-  margin: 0;
+/* Center the header text */
+header {
+  text-align: center;
 }
+
+/* Center the main image */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Style the navigation links */
+nav {
+  text-align: center;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: grey; /* You can choose another color */
+  color: white; /* Optional: make text easier to read */
+  text-decoration: none; /* Optional: remove underline */
+}
+
+/* Style the image caption */
+figcaption {
+  font-size: 0.8em;
+  text-align: center;
+}
+
+/* Style the text block inside the featured property section */
+#featured-property p {
+  width: 800px;
+  margin: 20px auto; /* Adds vertical spacing and centers */
+  text-align: center;
+}
+
+/* Float the detail divs to make them horizontal */
+#details div {
+  float: left;
+  width: 25%;
+  background-color: lightgray; /* Choose any background color */
+  text-align: center;
+  padding: 10px 0; /* Optional: adds space inside each div */
+  box-sizing: border-box; /* Ensures padding doesn't break layout */
+}
+
+/* Clear the float to prevent layout issues below #details */
+#details::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
